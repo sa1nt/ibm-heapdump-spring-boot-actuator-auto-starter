@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.sa1nt</groupId>
+    <artifactId>ibm-heapdump-spring-boot-auto-starter</artifactId>
+    <version>0.4</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <spring-boot.version>1.5.14.RELEASE</spring-boot.version>
+        <ibm-heapdump-spring-boot-actuator.version>0.8</ibm-heapdump-spring-boot-actuator.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <modules>
+        <module>ibm-heapdump-spring-boot-actuator-autoconfigure</module>
+        <module>ibm-heapdump-spring-boot-actuator-starter</module>
+    </modules>
+</project>
