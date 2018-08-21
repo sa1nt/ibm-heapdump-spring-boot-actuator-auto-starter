@@ -7,7 +7,7 @@
     <parent>
         <groupId>io.github.sa1nt</groupId>
         <artifactId>ibm-heapdump-spring-boot-auto-starter</artifactId>
-        <version>0.4</version>
+        <version>0.7</version>
     </parent>
 
     <artifactId>ibm-heapdump-spring-boot-actuator-starter</artifactId>
@@ -28,7 +28,33 @@
         <dependency>
             <groupId>io.github.sa1nt</groupId>
             <artifactId>ibm-heapdump-spring-boot-actuator-autoconfigure</artifactId>
-            <version>${parent.version}</version>
+            <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
+
+            <!--
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                </plugin>
+            -->
+        </plugins>
+    </build>
 </project>

@@ -1,2 +1,2 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.springframework.boot.actuate.autoconfigure.ManagementContextConfiguration=\
   io.github.sa1nt.ibmheapdump.autoconfiguration.J9HeapdumpAutoconfiguration
