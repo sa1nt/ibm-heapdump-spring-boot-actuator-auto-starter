@@ -7,12 +7,50 @@
     <groupId>io.github.sa1nt</groupId>
     <artifactId>ibm-heapdump-spring-boot-actuator-starter</artifactId>
     <version>0.8</version>
+    <packaging>jar</packaging>
+
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Spring Boot autoconfiguration and starter for the io.github.sa1nt:ibm-heapdump-spring-boot-actuator</description>
+    <url>https://github.com/sa1nt/ibm-heapdump-spring-boot-actuator</url>
+
+    <scm>
+        <connection>scm:git:git://github.com/sa1nt/ibm-heapdump-spring-boot-actuator-auto-starter.git</connection>
+        <developerConnection>scm:git:ssh://github.com:sa1nt/ibm-heapdump-spring-boot-actuator-auto-starter.git</developerConnection>
+        <url>https://github.com/sa1nt/ibm-heapdump-spring-boot-actuator-auto-starter/tree/master</url>
+    </scm>
 
     <properties>
         <spring-boot.version>1.5.14.RELEASE</spring-boot.version>
         <ibm-heapdump-spring-boot-actuator.version>0.8</ibm-heapdump-spring-boot-actuator.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <developers>
+        <developer>
+            <name>Anatolijs Mozgovs</name>
+            <email>anatolijs.mozgovs@gmail.com</email>
+            <url>https://github.com/sa1nt</url>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
@@ -75,7 +113,6 @@
                 </executions>
             </plugin>
 
-<!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
@@ -90,7 +127,18 @@
                     </execution>
                 </executions>
             </plugin>
--->
+
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.7</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>false</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
         </plugins>
 
     </build>
