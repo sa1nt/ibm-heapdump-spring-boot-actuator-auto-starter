@@ -11,7 +11,7 @@
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Spring Boot autoconfiguration and starter for the io.github.sa1nt:ibm-heapdump-spring-boot-actuator</description>
-    <url>https://github.com/sa1nt/ibm-heapdump-spring-boot-actuator</url>
+    <url>https://github.com/sa1nt/ibm-heapdump-spring-boot-actuator-auto-starter</url>
 
     <scm>
         <connection>scm:git:git://github.com/sa1nt/ibm-heapdump-spring-boot-actuator-auto-starter.git</connection>
