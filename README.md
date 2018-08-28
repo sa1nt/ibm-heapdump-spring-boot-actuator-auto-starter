@@ -1,5 +1,5 @@
 # ibm-heapdump-spring-boot-actuator-auto-starter
-Spring Boot autoconfiguration and starter sources for the ibm-heapdump-spring-boot-actuator
+Spring Boot autoconfiguration and starter sources for the [ibm-heapdump-spring-boot-actuator](https://github.com/sa1nt/ibm-heapdump-spring-boot-actuator)
 
 # Usage
 
